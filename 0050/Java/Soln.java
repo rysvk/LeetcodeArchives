@@ -9,6 +9,7 @@ class Solution {
         n = Math.abs(n);
         double res=1;
         while(n > 0){
+            // multiply with result only if LSB is 1
             if((n & 1) != 0)
                 res = res * x;
             x *= x;
