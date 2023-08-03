@@ -32,11 +32,4 @@ class HitCounter{
 /*
 TC : O(lg N)
 SC : O(1)
-
-TTTTT L      EEEEE
-  T   L      E
-  T   L      EEE
-  T   L      E
-  T   LLLLL  EEEEE
-
 */
