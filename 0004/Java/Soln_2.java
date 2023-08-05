@@ -127,7 +127,7 @@ class Solution {
             nums1 : [           maxLower1       minHigher1            ]   
 
                      0 1 2 3 ... p2-1           p2 ....   n2-1
-            nums2 : [         maxLower2      minHigher1       ]  
+            nums2 : [         maxLower2      minHigher2       ]  
 
             combined : [ arrangement of nums1[0..p1-1] and nums2[0..p2-1] | arrangement of nums1[p1 .. n1-1] and nums2[p2..n2-1] ]  
 
