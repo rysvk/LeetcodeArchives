@@ -118,14 +118,14 @@ class Solution {
             nums1 : [           maxLower1       minHigher1            ]   
 
                      0 1 2 3 ... p2-1           p2 ....   n2-1
-            nums2 : [         maxLower2      minHigher1       ]  
+            nums2 : [         maxLower2      minHigher2       ]  
 
             combined : [ arrangement of nums1[0..p1-1] and nums2[0..p2-1] | arrangement of nums1[p1 .. n1-1] and nums2[p2..n2-1] ]  
 
             */
 
             if( maxLower1 <= minHigher2 && maxLower2 <= minHigher1){
-                // This is the perfect pertition. Now find median.
+                // This is the perfect partition. Now find median.
                 if((s1 + s2) %2 == 0){
                     /* Total elements are even in number hence we need average of :-
                        1. Maximum element in the left sub half of combined ( maximum(maxLower1, maxLower2) )
