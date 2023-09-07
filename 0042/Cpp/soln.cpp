@@ -1,6 +1,9 @@
 class Solution {
 public:
     int trap(vector<int>& height) {
+        // TC : O(n)
+        // SC : O(1)
+        // 
         // Since this is an elevation map, each height[i] represent a block of height = height[i].
         //
         // Let us try to see in general how much water can we calculate above each and every block.
@@ -48,7 +51,7 @@ public:
             } else {   // high block has lesser height, calculate its contribution.
                 // update leftMax before calculating contribution
                 rightMax = max(rightMax, height[high]);
-                rain += rightMax - height[high--];
+                rain += rightMax - height[high--]; // to need to consider leftMax as height[high] < height[low]
             }
         }
         return rain;  
