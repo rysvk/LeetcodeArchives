@@ -31,3 +31,8 @@ class Solution {
         return -1;
     }
 }
+
+/*
+TC : O(lg n)
+SC : O(1)
+*/
